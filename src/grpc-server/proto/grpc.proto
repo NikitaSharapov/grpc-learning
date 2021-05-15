@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package grpcServer;
+
+service GrpcServerService {
+  rpc createGrpc(GrpcMessage) returns (GrpcMessage);
+}
+
+message GrpcMessage {
+  string grpcMessage = 1;
+}
